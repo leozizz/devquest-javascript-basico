@@ -1,7 +1,7 @@
-let questerChoice = confirm('Seja bem vindo(a), aventureiro(a)! Gostaria de pagar R$ 50,00 para passar a noite na nossa hospedagem?')
+const questerChoice = confirm('Seja bem vindo(a), aventureiro(a)! Gostaria de pagar R$ 50,00 para passar a noite na nossa hospedagem?')
 
-if(questerChoice === true) {
+if(questerChoice) {
     alert('Ótimo! Nós temos as melhores camas de toda a região!')
-} else {
+} else if (questerChoice === false) {
     alert('Que pena! Você parecia ser uma pessoa mais legal')
 }
